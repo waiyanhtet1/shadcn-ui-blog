@@ -29,8 +29,8 @@ const CharacterList = () => {
   if (error) return "Fail to get Characters!";
 
   return (
-    <>
-      <div className="grid grid-cols-3 gap-5">
+    <div className="container">
+      <div className="grid gird-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
         {data?.characters?.results
           ?.slice(startIndex, endIndex)
           .map((character) => (
@@ -51,7 +51,7 @@ const CharacterList = () => {
         pageParcharcter={pageParcharcter}
         totalLength={data?.characters?.results?.length}
       />
-    </>
+    </div>
   );
 };
 
