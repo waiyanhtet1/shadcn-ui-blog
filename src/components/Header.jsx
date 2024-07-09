@@ -7,8 +7,10 @@ const Header = () => {
     <>
       <header className="flex items-center justify-between p-5">
         <h1 className="text-xl font-bold">Rick & Morty</h1>
-        <ModeToggle />
-        <UserDropDown />
+        <div className="flex gap-5">
+          <ModeToggle />
+          <UserDropDown />
+        </div>
       </header>
       <Outlet />
     </>
